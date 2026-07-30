@@ -12,5 +12,4 @@ print('A:',a)
 print('T:',t)
 print('G:',g)
 print('C:',c)
-print('GC Content: {: .2f}
-      %'.format(gc_conent))
+print('GC Content: {: .2f} %'.format(gc_content))
