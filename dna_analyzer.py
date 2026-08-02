@@ -1,4 +1,7 @@
-dna = st.text_input("Enter a DNA sequence:").upper()
+dna_input = st.text_input("Enter a DNA sequence:")
+dna = dna_input.upper()
+# ONLY run calculations if text was entered
+if dna:
 length = len(dna)
 a = dna.count('A')
 t = dna.count('T')
