@@ -1,3 +1,4 @@
+import streamlit as st
 dna_input = st.text_input("Enter a DNA sequence:")
 dna = dna_input.upper()
 # ONLY run calculations if text was entered
@@ -8,7 +9,7 @@ if dna:
     g = dna.count('G')
     c = dna.count('C')
     gc_content = ( (g+c) / length) * 100 if length > 0 else 0
-    st.subheader('\n-----DNA Analysis Results -----')
+    st.subheader('----DNA Analysis Results ----')
     st.write('Sequence:', dna)
     st.write('Length:',length) 
     st.write('GC Content: {:.2f} %'.format(gc_content))
